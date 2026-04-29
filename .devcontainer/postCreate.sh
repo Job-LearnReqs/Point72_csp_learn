@@ -18,3 +18,10 @@ import csp
 
 print(f"Installed csp {csp.__version__}")
 PY
+
+if command -v codex >/dev/null 2>&1; then
+  codex --version
+else
+  echo "codex is not installed" >&2
+  exit 1
+fi

@@ -10,6 +10,9 @@
   "runArgs": [
     "--platform=linux/amd64"
   ],
+  "containerEnv": {
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
+  },
   "remoteUser": "vscode",
   "postCreateCommand": "bash .devcontainer/postCreate.sh",
   "customizations": {
@@ -28,6 +31,7 @@
     }
   },
   "remoteEnv": {
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}",
     "VIRTUAL_ENV": "${containerWorkspaceFolder}/.venv",
     "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
   }
