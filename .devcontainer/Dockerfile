@@ -25,6 +25,7 @@ RUN apt-get update \
         python3-pip \
         python3-venv \
         tar \
+        tmux \
         unzip \
     && mkdir -p /etc/apt/keyrings \
     && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key \

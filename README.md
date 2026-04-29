@@ -41,6 +41,7 @@ codex --login
 - Ubuntu 24.04
 - Python 3
 - Node.js 22
+- tmux
 - A workspace-local virtual environment at `.venv`
 - Build tools that match the Linux dependency list from the upstream `csp` repo
 - `csp` and `ipykernel` preinstalled in the virtual environment
