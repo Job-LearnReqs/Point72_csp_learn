@@ -23,7 +23,7 @@ Use this file as the source of truth for your CSP learning progress.
 
 | # | Concept | Status | Confidence | Evidence | Next Action |
 | --- | --- | --- | --- | --- | --- |
-| 00 | Orientation | Not Started | 0 | `learning/00-orientation/summary.md` | Read repo README and wiki home |
+| 00 | Orientation | Reading | 1 | `learning/00-orientation/summary.md` | Read repo README and wiki home |
 | 01 | Installation and Environment | Not Started | 0 | `learning/01-installation-and-environment/environment_check.py` | Create and run environment check |
 | 02 | First Steps | Not Started | 0 | `learning/02-first-steps/practice.py` | Build arithmetic graph |
 | 03 | Nodes | Not Started | 0 | `learning/03-nodes/practice.py` | Practice `ts[...]`, validity, state |
