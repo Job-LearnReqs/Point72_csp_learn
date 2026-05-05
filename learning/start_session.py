@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent
 PROGRESS = ROOT / "PROGRESS.md"
 REVISION_LOG = ROOT / "REVISION_LOG.md"
 REVISION_PLAN = ROOT / "REVISION_PLAN.md"
+EXERCISES = ROOT / "PRACTICAL_EXERCISES.md"
 
 
 @dataclass(frozen=True)
@@ -196,6 +197,15 @@ def parse_progress() -> dict[str, tuple[str, int]]:
     return rows
 
 
+def next_concept(progress: dict[str, tuple[str, int]]) -> Question | None:
+    active_statuses = {"Not Started", "Reading", "Practicing", "Review"}
+    for question in QUESTIONS:
+        status, _ = progress.get(question.concept_id, ("Not Started", 0))
+        if status in active_statuses:
+            return question
+    return None
+
+
 def choose_questions(progress: dict[str, tuple[str, int]], max_questions: int = 5) -> list[Question]:
     covered_statuses = {"Reading", "Practicing", "Review", "Done"}
     weak_ids = {
@@ -321,6 +331,13 @@ def main() -> None:
         print(f"{weak_count} weak concept(s) need revision before new study.")
     else:
         print("No weak concepts detected. Continue to the next concept in PROGRESS.md.")
+
+    upcoming = next_concept(progress)
+    if upcoming:
+        print("")
+        print(f"Next practical exercise: {upcoming.concept_id} {upcoming.concept}")
+        print(f"Read: {EXERCISES.relative_to(ROOT.parent)}")
+        print(f"Evaluate with: python learning/evaluate_exercises.py {upcoming.concept_id}")
 
 
 if __name__ == "__main__":

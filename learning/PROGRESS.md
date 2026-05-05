@@ -23,10 +23,10 @@ Use this file as the source of truth for your CSP learning progress.
 
 | # | Concept | Status | Confidence | Evidence | Next Action |
 | --- | --- | --- | --- | --- | --- |
-| 00 | Orientation | Reading | 2 | `learning/00-orientation/summary.md` | Confirm reading complete and explain simulation/realtime reuse without notes |
-| 01 | Installation and Environment | Review | 2 | `learning/01-installation-and-environment/environment_check.py` | Answer installed package versus source build checkpoint |
-| 02 | First Steps | Not Started | 0 | `learning/02-first-steps/practice.py` | Build arithmetic graph |
-| 03 | Nodes | Not Started | 0 | `learning/03-nodes/practice.py` | Practice `ts[...]`, validity, state |
+| 00 | Orientation | Done | 3 | `learning/00-orientation/summary.md` | Continue to 03 Nodes |
+| 01 | Installation and Environment | Done | 3 | `learning/01-installation-and-environment/environment_check.py` | Continue to 03 Nodes |
+| 02 | First Steps | Done | 3 | `learning/02-first-steps/practice.py` | Continue to 03 Nodes |
+| 03 | Nodes | Reading | 1 | `learning/03-nodes/practice.py` | Read node docs and practice `ts[...]`, validity, state |
 | 04 | Graphs | Not Started | 0 | `learning/04-graphs/practice.py` | Compose smaller graphs |
 | 05 | Types, Structs, Data Modeling | Not Started | 0 | `learning/05-types-structs-and-data-modeling/practice.py` | Define Quote and Trade structs |
 | 06 | Execution Modes and Time | Not Started | 0 | `learning/06-execution-modes-and-time/practice.py` | Run graph with explicit times |

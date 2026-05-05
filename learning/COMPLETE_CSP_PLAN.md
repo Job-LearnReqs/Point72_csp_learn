@@ -37,6 +37,16 @@ folder asks for a different artifact.
 python learning/<concept-folder>/practice.py
 ```
 
+Each topic also has a practical exercise and evaluator. See
+[`PRACTICAL_EXERCISES.md`](PRACTICAL_EXERCISES.md), then run:
+
+```bash
+python learning/evaluate_exercises.py <concept-id>
+```
+
+Reference solution approaches live in [`SOLUTIONS.md`](SOLUTIONS.md). Try the
+exercise before reading the relevant solution section.
+
 ## Concept Directory Map
 
 | Order | Folder | Concept |
@@ -80,8 +90,9 @@ python learning/<concept-folder>/practice.py
 2. Write a short summary in [`notes.md`](notes.md).
 3. Implement the practice setup.
 4. Run the practice file or produce the requested design artifact.
-5. Answer the checkpoint before moving on.
-6. Update [`PROGRESS.md`](PROGRESS.md).
+5. Run `python learning/evaluate_exercises.py <concept-id>` and fix failures.
+6. Answer the checkpoint before moving on.
+7. Update [`PROGRESS.md`](PROGRESS.md).
 
 The goal is not to memorize every API. The goal is to know where each concept
 fits and to build a small local artifact for every major area of CSP.

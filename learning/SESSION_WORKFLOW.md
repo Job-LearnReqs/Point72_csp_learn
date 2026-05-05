@@ -18,6 +18,7 @@ The script:
 - asks a short revision question
 - records your answer and self-score in [`REVISION_LOG.md`](REVISION_LOG.md)
 - writes weak areas to [`REVISION_PLAN.md`](REVISION_PLAN.md)
+- points you to the next practical exercise/evaluator command
 
 ## Scoring
 
@@ -34,7 +35,11 @@ Any concept scored below `2` should be revised before starting a new concept.
 3. If weak concepts exist, revise those folders first.
 4. Update [`PROGRESS.md`](PROGRESS.md) confidence scores after revision.
 5. Continue the next concept in [`COMPLETE_CSP_PLAN.md`](COMPLETE_CSP_PLAN.md).
-6. End by updating [`PROGRESS.md`](PROGRESS.md) and adding notes to
+6. Build the topic artifact from
+   [`PRACTICAL_EXERCISES.md`](PRACTICAL_EXERCISES.md).
+7. Run `python learning/evaluate_exercises.py <concept-id>` and compare with
+   [`SOLUTIONS.md`](SOLUTIONS.md) after your own attempt.
+8. End by updating [`PROGRESS.md`](PROGRESS.md) and adding notes to
    [`notes.md`](notes.md).
 
 ## Suggested Codex Prompt
@@ -55,4 +60,5 @@ Do not mark a concept `Done` unless:
 - revision score is `2/2`
 - confidence is at least `3`
 - the evidence artifact exists
+- `python learning/evaluate_exercises.py <concept-id>` passes
 - the checkpoint answer is clear without reading the docs

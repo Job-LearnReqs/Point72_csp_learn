@@ -27,6 +27,7 @@ Use this file as a working notebook while progressing through the learning path.
 
 - Orientation checkpoint: CSP is graph-based stream processing for event-driven time-series computation.
 - Key reuse idea: the same graph logic can run against historical data in simulation or realtime data in production.
+- Installation checkpoint: learning from the installed package means using the current CSP API to build graphs with nodes, adapters, and event streams. Contributing from source means changing CSP's own implementation, build/test setup, docs, examples, or exported building blocks.
 
 ### Phase 2
 
