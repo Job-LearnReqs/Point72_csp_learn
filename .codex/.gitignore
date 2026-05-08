@@ -1,0 +1,11 @@
+# Ignore Codex runtime state and secrets by default.
+*
+
+# Project-shared Codex configuration.
+!.gitignore
+!README.md
+!setup.sh
+!config.toml
+!rules/
+rules/*
+!rules/default.rules

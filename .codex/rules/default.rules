@@ -1,0 +1,6 @@
+prefix_rule(pattern=["python", "learning/start_session.py"], decision="allow")
+prefix_rule(pattern=["python", "-c", "import csp, inspect; print(csp.curve); print(inspect.signature(csp.curve))"], decision="allow")
+prefix_rule(pattern=["python", "learning/evaluate_exercises.py"], decision="allow")
+prefix_rule(pattern=["codex", "--help"], decision="allow")
+prefix_rule(pattern=["codex", "debug"], decision="allow")
+prefix_rule(pattern=["codex", "features"], decision="allow")

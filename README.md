@@ -29,6 +29,16 @@ The image also installs the OpenAI Codex CLI during the container build, so `cod
 codex --version
 ```
 
+Then register this checkout's repo-local Codex configuration:
+
+```bash
+sh .codex/setup.sh
+```
+
+Run that command once per new machine or fresh container. It adds a local trust
+entry to `~/.codex/config.toml` so Codex loads this repo's `.codex/config.toml`
+and `.codex/rules/`, including the no-prompt learning-session settings.
+
 You can then start Codex with either:
 
 ```bash

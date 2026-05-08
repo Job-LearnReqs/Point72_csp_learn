@@ -53,3 +53,37 @@
   What is the difference between using the installed CSP package and building CSP from source?
 - Answer summary:
   The installed CSP package is for normal learning and application work. Building from source is mainly for contributing to CSP itself or changing CSP internals.
+
+## Session 2026-05-08 10:11:34 UTC
+
+### 03 Nodes
+- Score: 2/2
+- Revision: `learning/03-nodes/README.md`
+- Prompt:
+  Why is `ts[float]` not the same thing as `float`, and why does `csp.valid` matter?
+- Answer summary:
+  ts[float] is represented of timeseries of float values which can tick and have a sense of time of occurrence of events while 'float' is a single float value that does not change unless explicitly updated. A time series value that has not ticked ever will evaluate for csp.valid as false, so csp.valid is used to check if the ts value has ticked
+
+### 01 Installation and Environment
+- Score: 2/2
+- Revision: `learning/01-installation-and-environment/README.md`
+- Prompt:
+  What is the difference between using the installed CSP package and building CSP from source?
+- Answer summary:
+  I know this and consider Installation and Environment mastered.
+
+### 00 Orientation
+- Score: 2/2
+- Revision: `learning/00-orientation/README.md`
+- Prompt:
+  What problem is CSP designed to solve, and why is it useful for realtime systems?
+- Answer summary:
+  I know this and consider Orientation mastered.
+
+### 02 First Steps
+- Score: 2/2
+- Revision: `learning/02-first-steps/README.md`
+- Prompt:
+  In a minimal CSP program, what roles do `csp.const`, `@csp.graph`, `@csp.node`, and `csp.run` play?
+- Answer summary:
+  I know this and consider First Steps mastered.
